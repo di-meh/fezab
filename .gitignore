@@ -29,4 +29,5 @@ src/lib/paraglide
 *storybook.log
 storybook-static
 
-/prisma/src/generated/prisma
+# Prisma
+src/generated
