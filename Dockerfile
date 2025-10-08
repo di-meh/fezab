@@ -23,7 +23,7 @@ COPY . .
 
 # [optional] tests & build
 ENV NODE_ENV=production
-# RUN bun run test
+# RUN pnpm run test
 RUN pnpm run build
 
 # copy dev dependencies and source code into dev image
