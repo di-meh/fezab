@@ -2,6 +2,7 @@ FROM node:lts-slim AS base
 WORKDIR /usr/src/app
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+RUN apt-get update && apt-get install -y --no-install-recommends openssl && rm -rf /var/lib/apt/lists/*
 RUN corepack enable
 
 FROM base AS install
