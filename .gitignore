@@ -30,4 +30,4 @@ src/lib/paraglide
 storybook-static
 
 # Prisma
-src/generated
+# src/lib/generated
